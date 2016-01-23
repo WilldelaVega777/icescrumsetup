@@ -4,7 +4,7 @@
 # before the build step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
 
-source "$OPENSHIFT_REPO_DIR/.openshift/lib/utils"
+source "$OPENSHIFT_REPO_DIR.openshift/lib/utils"
 
 # Check if mysql has been added. 
 check_mysql_added_to_app  ||  exit 2  # ENOENT
