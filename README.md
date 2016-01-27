@@ -19,19 +19,19 @@ Create a namespace, if you haven't already do so
 
 Create a diy-0.1 application (you can name it anything via -a)
 
-    rhc app create -a scrummage -t diy-0.1  [ -g <gear-size> ]
+    rhc app create -a projects -t diy-0.1  [ -g <gear-size> ]
 
     Note:  Using this quickstart with "bigger" (medium to large) gear sizes is
            recommended as iceScrum needs a lot of resources (cpu + memory). 
 
 Add the mysql-5.1 cartridge to the app
 
-    rhc cartridge add -a scrummage -c mysql-5.1
+    rhc cartridge add -a projects -c mysql-5.1
 
 Add this `github icescrum-openshift-quickstart` repository
 
-    cd scrummage
-    git remote add upstream -m master git://github.com/ramr/icescrum-openshift-quickstart.git
+    cd projects.git
+    git remote add upstream -m master git://github.com/WilldelaVega777/icescrumsetup.git
     git pull -s recursive -X theirs upstream master
 
 If you need to adjust the memory footprint, you can adjust the JVM options
@@ -64,5 +64,5 @@ tailing the log files on your app's gear.
 And check that the iceScrum app has started and then you can
 checkout your application at:
 
-    http://scrummage-$yournamespace.rhcloud.com/icescrum
+    http://projects-$yournamespace.rhcloud.com/icescrum
 
